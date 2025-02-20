@@ -1,0 +1,33 @@
+    
+    <div class="main-wrapper">
+
+        <div class="container px-3 px-lg-5">
+
+            <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+                {{ partial "resume/resume_header.html" . }}
+
+                <hr>
+
+                {{ if .Site.Data.resume.summary.enable }}
+                    {{ partial "resume/resume_summary.html" . }}
+                {{ end }}
+
+                <hr>
+                <div class="resume-body">
+
+
+                    {{ partial "resume/resume_main.html" . }}
+
+                    {{ partial "resume/resume_sidebar.html" . }}
+
+
+            </div><!--//resume-body-->
+                <hr>
+            </article>
+
+        </div><!--//container-->
+
+        {{ partial "resume/resume_footer.html" . }}
+
+    </div><!--//main-wrapper-->

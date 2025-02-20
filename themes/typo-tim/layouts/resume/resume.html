@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+
+
+{{ $theme := "auto"}}
+
+{{ with .Param "theme" }}
+{{ $theme = .}}
+{{ end }}
+
+<body class="{{ $theme }}">
+    <div class="content">
+  
+        <div class="single-content">
+            {{ .Content }}
+        </div>
+
+
+    {{ partial "resume/resume_scripts.html" . }}
+</div>
+
+</body>
+
+
+{{ end }}

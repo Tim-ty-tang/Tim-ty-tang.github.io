@@ -1,0 +1,11 @@
+{{/* Social Icons */}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="socials" style="text-align: center;">
+    {{ range .Site.Params.social.list }}
+        <a class="resume-link" href="{{ .url }}" target="_blank">
+            <i class="{{ .icon }} fa-2x mr-2" data-fa-transform="down-4"></i>
+        </a>
+    {{ end }}
+</div>

@@ -1,0 +1,248 @@
+# Resume
+[profile]        
+    enable = true
+    name = "Timothy Tang"
+    tagline = "Senior Machine Learning Engineer | Data Scientist"
+    avatar = ""
+
+[contact]
+    enable = true
+    location = "London | Hong Kong"
+
+    [[contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "+447887930652 | +85255897743"
+    [[contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "tangtszyu5d@gmail.com"
+    [[contact.list]]
+        icon = "fas fa-globe"
+        url = "ttyt.me"
+        text = "ttyt.me"
+
+[summary]
+    enable = true
+    text = """
+    Machine Learning Engineer and Data Scientist. With a focus on the scientific computing python stack and associated low level language access (C via Cython, CUDA via Pytorch). Also experienced in distributed computing for data science processes. (pyspark, dask)
+
+    Experienced in web frameworks (Flask, Fastapi, torchserve) for model and algorithm deployment and serving with proper MLOps practices and tools usages (MLFlow, Feature Stores). Experienced in Spark via PySpark, and various data engineering tools (Kafka, Airflow, DuckDB) for batch processes and distributed training. AWS and Azure experience (S3, Redshift, Glue, Azure Actions, Blob Storage).
+    
+    Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsModel) and deep learning (Pytorch). Experienced in open source LLMs deployment and LLM evaluations.
+
+	Interested in using Rust, Scala, and Julia for various data engineering and machine learning engineering applications.
+    """
+
+
+[skills]
+    enable = true
+
+    [[skills.list]]
+    title = "Technical"
+        [[skills.list.items]]
+            details = "Languages: Python/SQL/Matlab"
+        [[skills.list.items]]
+            details = "Lower Level: C via Cython/JAX"
+        [[skills.list.items]]
+            details = "MLOps: Flask/Fastapi/torchserve/MLFlow/Dask"
+        [[skills.list.items]]
+            details = "Data Engineering: Kafka/Airflow/DuckDB/Spark/PostgreSQL"
+        [[skills.list.items]]
+            details = "Modelling: XGBoost/LightGBM/StatsModel/Pytorch"
+        [[skills.list.items]]
+            details = "LLMOps: Ollama/llama.cpp/comfy.ui/evals"
+        [[skills.list.items]]
+            details = "AWS (S3, Redshift, Glue, EC2)"
+        [[skills.list.items]]
+            details = "Azure (Azure Actions, Blob Storage, AzureML)"
+        [[skills.list.items]]
+            details = "Databricks"
+
+    [[skills.list]]
+    title = "Industries"
+        [[skills.list.items]]
+        details = "Logistics"
+        [[skills.list.items]]
+        details = "Renewables"
+        [[skills.list.items]]
+        details = "Insurance"
+        [[skills.list.items]]
+        details = "Oil aand Gas"
+        [[skills.list.items]]
+        details = "Consulting"
+
+    [[skills.list]]
+    title = "Other"
+        [[skills.list.items]]
+        details = "Interested in using: Rust/Julia/Dagster/CUDA"
+        [[skills.list.items]]
+        details = "Topics of Interest: Knowledge Gaph in LLM/Event-baased Time Series Modelling/Alternative Market Making"
+
+[education]
+enable = true
+
+[[education.list]]
+degree = "MSc in Data Science"
+university = "Kings College London"
+dates = "2017 - 2018"
+[[education.list]]
+degree = "Msci in Maths and Physics"
+university = "University College London"
+dates = "2010 - 2014"
+
+[awards]
+enable = false
+
+[[awards.list]]
+name = "Award Lorem Ipsum"
+body = "Microsoft lorem ipsum"
+date = "2019"
+
+[languages]
+enable = true
+
+[[languages.list]]
+name = "English"
+level = "Native"
+[[languages.list]]
+name = "Chinese (Mandarin)"
+level = "Native"
+[[languages.list]]
+name = "Chinese (Cantonese)"
+level = "Native"
+
+
+[interests]
+enable = true
+
+[[interests.list]]
+name = "Sport Analytics"
+[[interests.list]]
+name = "Scuba"
+[[interests.list]]
+name = "Photography"
+[[interests.list]]
+name = "Tennis"
+[[interests.list]]
+name = "TCG"
+
+[experience]
+enable = true
+
+[[experience.list]]
+title = "Data Scientist (Contractor)"
+dates = "March 2022 - December 2024"
+company = "BP"
+details = """
+As a data science contractor, provided Data Science product expertise and analysis to various functions across BP. This included Production, Refining, Renewables, Strategy and Safety. 
+
+Deeply involved as a product data scientist in product development for a renewables modelling platform. Core work involves researching and designing countermeasures against the risks regarding Model IP in the context of an API Marketplace.
+
+* Investigated the effects and risks of model theft and replication if a model is made available in a models marketplace. With a family of internal test models, tested the limits of reverse engineering under a couple of scenarios defined through customer research.
+* Model IP protection: With the above results, designed a framework to measure the relative risk of theft and replication for a given model.  Using the resulting metrics, a further system is developed to capture the ongoing risks of model calls on the API marketplace. This was turned into a monitoring and alerting service in production with the architecture and software engineering teams.
+* For the above designs, worked with internal counsel to submit for patent application.
+* Model marketplace development: As part of business development of the platform, aided in consulting for internal teams and startups on the strategy of productionizing and monetizing their internal models. 
+
+Working in conjunction with compressor engineers, introduced and applied explainable machine learning to compressor fouling analysis:
+
+- Working with compressor engineers to find factors for analysis. Further feature engineering was done to further analyze potential fouling issues in the compressors. 
+- Created a model with explainable machine learning to explore counterfactuals. Designed a dashboard based on the model to allow compressor engineers to explore a angle of scenarios and options.
+
+Analysis and modeling of equipment failures. Produced a survival analysis model to provide a clearer view of the pattern of failures.
+
+Involved in introducing statistical analysis to understanding pattern of survival analysis, and aid in setting better health and safety targets.  
+
+Consulting work with strategy, aiding the team in designing the roadmap for modernizing data stacks and tooling.
+
+Investigated Microsoft and OpenAI machine learning API offerings as part of a team wide AI drive. Focused especially on producing internal benchmarks using various evaluations packages.
+
+As a member of technical staff, participated in facilitating knowledge sharing and mentorship.  Organized and led a team data science reading group.
+"""
+
+[[experience.list]]
+title = "Machine Learning Engineer"
+dates = "August 2018 - March 2022"
+company = "Aioi Nissay Dowa"
+details = """
+With a focus on vehicle telematics data and insurance customers, worked on providing classification, categorisation and scoring models to enable paradigm changes and automation in insurance operations. Was involved in the full machine learning models development and deployment cycle, which includes, exploratory data analysis, data collection, feature engineering, model building and optimisation, acceptance testing, API building, deployment/serving and continuous monitoring/training.
+
+Project lead for driving behaviour algorithms. Lead a team of 2-3 data scientists and engineers to develop the product.
+
+* Involved in creating new generations of driving behaviour predictive models in association with team data scientists and insurance analysts. Using mainly telematics data and incorporating other data sources, such as mapping and weather information,   
+* The team was able to increase the ability to identify 70% more customers that have a high risk of causing an insurance event or impact incident compared to the previous telematics method. This translates to an estimated gain in loss prevention ratio of 30%.  
+* The team was able to create a machine learning scoring pipeline in production to handle more than 100k drivers, which translates to over 200k trips a day.  
+* Supported the transition to a next generation platform in conjunction with the engineering teams, with a focus on Data-as-a-service model.
+
+Contributed to crash identification algorithms via telematics dynamics.
+
+* Created a filtering algorithm to identify noisey crashes, to either enable cleaning or removal from sample. We produced a capture rate of 95% of all real crashes, reducing the number of crashes that require customer support intervention by half.  
+* Involved in designing further downstream categorisation and automation systems to enable automatic customer services and incident triage via a customer portal.
+
+Delivered MLOps practises in conjunction with Operations teams
+
+* Created the CI/CD workflow for python and specifically machine learning projects. Created a bespoke deployment framework in conjunction with operations to address team needs. Furthermore, defined and built required data pipelines to deliver continuous monitoring and analysis of the predictive and classification models.
+
+Delivered an end-to-end framework for model explainability, in order to enable insurance product enhancements and better customer service on the platform.
+
+Involved in generating required visualisation and dashboard for management to understand data. Also supported any ad-hoc analysis and reporting for clients.
+
+Involved in product, architecture and resource planning for projects. Managed team of 2 junior machine learning engineers to deliver projects, with coaching and guidance provided.
+"""
+
+[[experience.list]]
+title = "Operational Data Analyst"
+dates = "October 2016 - September 2017"
+company = "Amazon"
+details = """
+Maintain and manage performance metrics and communications for logistic operations with data-driven. Drove innovation in reporting and metrics management process.
+
+* Contact with key stakeholders to ensure compliance and improve performance of linehauls and warehouse operations.  
+* Automation of reporting and communication process with VBA, SQL and Microsoft stack of business analytics tools.  
+* Further developed warehouse operational metrics in tandem with operations management to identify areas of improvement.
+"""
+
+[[experience.list]]
+title = "Analyst"
+dates = "October 2014 - March 2016"
+company = "KPMG"
+details = """
+* Technology risk consulting  
+* Projects include: IT audit, IT process review, due diligence reporting, ISAE3402 reporting, Data quality assurance, information governance review.  
+* Participated in designing audit programmes for bespoke projects.  
+* Participated in dashboard building and analysis for clients.
+"""
+
+[projects]
+enable = false
+
+[[projects.list]]
+title = "Project Lorem Ipsum"
+meta = "Open Source"
+tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+[[projects.list]]
+title = "Project Sed Fringilla"
+meta = "Open Source"
+tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+[[projects.list]]
+title = "Project Praesent"
+meta = "Open Source"
+tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+
+[information]
+enable = false
+
+[[information.list]]
+title = "Papers"
+[[information.list.items]]
+details = "2018 · Lorem Ipsum"
+[[information.list.items]]
+details = "2016 · Sed Fringilla"
+
+[[information.list]]
+title = "Interests"
+details = "Climbing, Snowboarding, Photography, Travelling"
+

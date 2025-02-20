@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{/* Breadcrumbs */}}
+
+{{ partial "breadcrumbs.html" . }}
+
+<div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
+
+  <div class="single-intro-container">
+
+    {{/* Title and Summary */}}
+
+    <h1 class="single-title">{{ .Title }}</h1>
+
+  </div>
+  {{/* About content */}}
+
+  <div class="single-content">
+    {{ .Content }}
+  </div>
+
+  {{/* Next prev controls */}}
+
+
+</div>
+
+{{ end }}

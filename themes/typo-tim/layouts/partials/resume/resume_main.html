@@ -1,0 +1,74 @@
+<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+
+    {{ if .Site.Data.resume.experience.enable }}
+
+        <section class="work-section py-3 resume-experience">
+
+            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "experiences" }}</h3>
+
+            {{ range .Site.Data.resume.experience.list }}
+            <div class="item mb-3">
+                <div class="item-heading row align-items-center mb-2">
+                    <h4 class="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">{{ .title }}</h4>
+                    <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">{{ .company }} | {{ .dates }}</div>
+                </div>
+                <div class="item-content">
+                    <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
+                    <ul class="resume-list">
+                        {{ range .items }}
+                        <li>{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div><!--//item-->
+        {{ end }}
+
+    </section><!--//work-section-->
+    {{ end }}
+
+    {{ if .Site.Data.resume.projects.enable }}
+        <section class="project-section py-3 resume-projects">
+
+            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "projects" }}</h3>
+
+            {{ range .Site.Data.resume.projects.list }}
+            <div class="item mb-3">
+                <div class="item-heading row align-items-center mb-2">
+                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ .title }}</h4>
+                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{ .meta }}</div>
+                </div>
+                <div class="item-content">
+                    <p>{{ .tagline }}</p>
+                </div>
+            </div><!--//item-->
+            {{ end }}
+
+        </section><!--//project-section-->
+    {{ end }}
+
+    {{ if .Site.Data.resume.information.enable }}
+
+        <section class="project-section py-3 resume-information">
+
+            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "information" }}</h3>
+
+            {{ range .Site.Params.information.list }}
+            <div class="item mb-3">
+                <div class="item-heading row align-items-center mb-2">
+                    <h4 class="item-title col-12 col-md-12 col-lg-12 mb-2 mb-md-0">{{ .title }}</h4>
+                </div>
+                <div class="item-content">
+                    <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
+                    <ul class="list-unstyled resume-skills-list">
+                        {{ range .items }}
+                        <li class="mb-2">{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div><!--//item-->
+            {{ end }}
+
+        </section><!--//project-section-->
+    {{ end }}
+
+</div><!--//resume-main-->

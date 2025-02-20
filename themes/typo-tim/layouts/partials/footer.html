@@ -1,0 +1,13 @@
+<p>Powered by
+    <a href="https://gohugo.io/">Hugo</a>
+    and
+    <a href="https://github.com/tomfran/typo">typo</a>
+    and
+    <a href="https://github.com/cowboysmall-tools/hugo-devresume-theme">devresume</a>
+    and
+    <a href="https://github.com/typo-tim/gallerydeluxe">gallerydeluxe</a>
+</p>
+
+{{ if .Param "math" }}
+{{ partialCached "math.html" . }}
+{{ end }}

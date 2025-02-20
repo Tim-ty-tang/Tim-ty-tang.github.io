@@ -1,0 +1,127 @@
+baseURL = 'https://ttyt.me/'
+languageCode = 'en-uk'
+title = 'TTYT'
+theme = 'typo-tim'
+
+[build]
+timeout = "300s"  # Increase timeout to 2 minutes
+
+[timeouts]
+render = "300s"  # Increase this value as needed
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "Resume and Writing"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+Hi! I am Tim.
+
+For an actual introduction see [**about**](/about).
+
+For my writing and link blog visit [**posts**](/posts).
+
+For my longform resume: [**resume**](/resume/main).
+
+For some of my travel pictures (including scuba and the occasional _photography_) click [**gallery**](/gallery).
+
+{{< socials >}}
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 10
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = false
+
+[params.social]
+enable = true
+
+[[params.social.list]]
+icon = "fab fa-github-square"
+url = "//github.com/tim-ty-tang"
+title = "timothy-ty-tang"
+[[params.social.list]]
+icon = "fab fa-linkedin"
+url = "//linkedin.com/in/timothy-tang-8ab98697"
+title = "tangtszyu"
+[[params.social.list]]
+icon = "fab fa-twitter-square"
+url = "//bsky.app/profile/tty-tang.bsky.social"
+title = "@tim-ty-tang"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "resume"
+url = "/resume/main"
+
+[[params.menu]]
+name = "gallery"
+url = "/gallery"
+
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[params.gallerydeluxe]
+# Shuffle the images in the gallery to give the impression of a new gallery each time.
+shuffle = true
+
+# Reverse the order of the images in the gallery.
+reverse = false
+
+# Enable Exif data in the gallery.
+# See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
+enable_exif = false
+
+# Optional watermark file for the large images.
+[params.gallerydeluxe.watermark]
+image = "images/gopher-hero8.png" # relative to /assets
+posx  = "left"                    # one of "left", "center", "right"
+posy  = "bottom"                  # one of "top", "center", "bottom"
+
+[params.footer]
+copyright = "TTYT"

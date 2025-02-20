@@ -1,0 +1,12 @@
+services:
+  site:
+    image: hugomods/hugo:latest
+    container_name: personal_site
+    command: ["server", "-D", "-p", "8081"]
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/src
+    stdin_open: true  # equivalent to -i
+    tty: true        # equivalent to -t
+    restart: "no"    # equivalent to --rm (removes container after stopping)
