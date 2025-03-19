@@ -82,7 +82,6 @@ Introductory talk for MLOps and security from a MLOps perspective. Specifically 
 
 A more holistic overview on model security topics. More from a security researcher's perspective, but worth considering to understand further vulnerabilities in systems with machine learning components.
 
-
 [Stealing Machine Learning Models via Prediction APIs](https://arxiv.org/abs/1609.02943) and [Presentation](https://www.youtube.com/watch?v=BD7RcRLkk_0)
 
 This is one of the original papers on model theft. The authors specifically look at the context MLaaS in the cloud as a target (AWS). The available talk is a great summary of the paper, which should inform of the general approach we will be taking.

@@ -25,13 +25,19 @@
 [summary]
     enable = true
     text = """
-    Machine Learning Engineer and Data Scientist. With a focus on the scientific computing python stack and associated low level language access (C via Cython, CUDA via Pytorch). Also experienced in distributed computing for data science processes. (pyspark, dask)
+Machine Learning Engineer and Data Scientist. With a focus on the scientific computing python stack and associated low level language access (C via Cython, CUDA via Pytorch). 
 
-    Experienced in web frameworks (Flask, Fastapi, torchserve) for model and algorithm deployment and serving with proper MLOps practices and tools usages (MLFlow, Feature Stores). Experienced in Spark via PySpark, and various data engineering tools (Kafka, Airflow, DuckDB) for batch processes and distributed training. AWS and Azure experience (S3, Redshift, Glue, Azure Actions, Blob Storage).
-    
-    Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsModel) and deep learning (Pytorch). Experienced in open source LLMs deployment and LLM evaluations.
+Also experienced in distributed computing for data science processes. (pyspark, dask). 
 
-	Interested in using Rust, Scala, and Julia for various data engineering and machine learning engineering applications.
+Used Cloud tools for machine learning (Azure ML, Databricks, Palantir Foundry)
+
+Experienced in web frameworks (Flask, Fastapi, torchserve) for model and algorithm deployment and serving. 
+
+Experienced in Spark via PySpark, and various data engineering tools (Kafka, Airflow, DuckDB) for batch processes and distributed training. AWS and Azure experience (S3, Redshift, Glue, Azure Actions, Blob Storage). 
+
+Experienced in managing tooling for the Python Data Science Stack (uv, Poetry, Conda)
+
+Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsModel) and deep learning (Pytorch). Experienced in open source LLMs deployment (Ollama) and LLM evaluations (Deepeval, InspectAI).
     """
 
 
@@ -131,7 +137,7 @@ name = "TCG"
 enable = true
 
 [[experience.list]]
-title = "Data Scientist (Contractor)"
+title = "Data Scientist (Contractor) with Machine Learning Engineering Focus"
 dates = "March 2022 - December 2024"
 company = "BP"
 details = """
@@ -141,6 +147,7 @@ Deeply involved as a product data scientist in product development for a renewab
 
 * Investigated the effects and risks of model theft and replication if a model is made available in a models marketplace. With a family of internal test models, tested the limits of reverse engineering under a couple of scenarios defined through customer research.
 * Model IP protection: With the above results, designed a framework to measure the relative risk of theft and replication for a given model.  Using the resulting metrics, a further system is developed to capture the ongoing risks of model calls on the API marketplace. This was turned into a monitoring and alerting service in production with the architecture and software engineering teams.
+* Investigated various GenAI applications in the context of a models marketplace. Generally focused on creating POCs and examples for RAG and GenAI based retrieval for various model documentation.
 * For the above designs, worked with internal counsel to submit for patent application.
 * Model marketplace development: As part of business development of the platform, aided in consulting for internal teams and startups on the strategy of productionizing and monetizing their internal models. 
 

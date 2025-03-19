@@ -29,7 +29,7 @@ And here are some things I am working on/learning/tinkering right now:
   - LLM assited reading as a Personal Knowledge Management System component.
   - Video pipelines using vidgen and musicgen etc.
   - Associated devops, llmops, local infrastructure, homelab and  more to suport the above workflows.
- 
+
 And here are just an assortment of hobbies I love to talk about:
 
 - My adventure holiday of choice is scuba diving.
