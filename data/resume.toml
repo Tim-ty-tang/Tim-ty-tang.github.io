@@ -2,7 +2,7 @@
 [profile]        
     enable = true
     name = "Timothy Tang"
-    tagline = "Senior Machine Learning Engineer | Data Scientist"
+    tagline = "Senior AI Engineer | Machine Learning Engineer | Data Scientist"
     avatar = ""
 
 [contact]
@@ -27,6 +27,14 @@
     text = """
 Machine Learning Engineer and Data Scientist. With a focus on the scientific computing python stack and associated low level language access (C via Cython, CUDA via Pytorch). 
 
+Extensive hands-on experience with production LLM systems and LLMOps. Expert in cutting-edge LLM frameworks, particularly LangGraph for building stateful multi-agent systems and complex conversational workflows. Proficient in DSPy for programmatic prompt optimization. 
+
+Deep expertise in customizing, fine-tuning, deploying, and systematically evaluating both open-source and proprietary LLMs for production use cases. Experienced in model adaptation techniques including fine-tuning, prompt optimization, and domain-specific model customization.
+
+Specialized in LLM observability and evaluation infrastructure. Proficient in distributed tracing frameworks (OpenTelemetry) for LLM applications, building comprehensive evaluation pipelines, and establishing monitoring systems for production AI. 
+
+Experienced in designing and implementing guardrails, safety systems, and quality scoring mechanisms for conversational AI.
+
 Also experienced in distributed computing for data science processes. (pyspark, dask). 
 
 Used Cloud tools for machine learning (Azure ML, Databricks, Palantir Foundry)
@@ -47,7 +55,7 @@ Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsMode
     [[skills.list]]
     title = "Technical"
         [[skills.list.items]]
-            details = "Languages: Python/SQL/Matlab"
+            details = "Languages: Python // SQL // Matlab"
         [[skills.list.items]]
             details = "Lower Level: C via Cython/JAX"
         [[skills.list.items]]
@@ -55,18 +63,24 @@ Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsMode
         [[skills.list.items]]
             details = "Data Engineering: Kafka/Airflow/DuckDB/Spark/PostgreSQL"
         [[skills.list.items]]
+            details = "AI Agents: LangGraph/DSPy/PydanticAI/SmolAgents/ClaudeCode SDK"
+        [[skills.list.items]]
+            details = "LLM Tooling: Weaviate/Unsloth/LoRA/QLoRA/FAISS"
+        [[skills.list.items]]
             details = "Modelling: XGBoost/LightGBM/StatsModel/Pytorch"
         [[skills.list.items]]
-            details = "LLMOps: Ollama/llama.cpp/comfy.ui/evals"
+            details = "LLMOps: vLLM/llama.cpp/deepeval/evals/Langfuse/OpenTelemetry"
         [[skills.list.items]]
             details = "AWS (S3, Redshift, Glue, EC2)"
         [[skills.list.items]]
             details = "Azure (Azure Actions, Blob Storage, AzureML)"
         [[skills.list.items]]
-            details = "Databricks"
+            details = "Databricks // Palantir"
 
     [[skills.list]]
     title = "Industries"
+        [[skills.list.items]]
+        details = "Online Retail & Search"
         [[skills.list.items]]
         details = "Logistics"
         [[skills.list.items]]
@@ -135,6 +149,30 @@ name = "TCG"
 
 [experience]
 enable = true
+
+
+[[experience.list]]
+title = "Data Scientist (Contractor) with Machine Learning Engineering Focus"
+dates = "April 2025"
+company = "Rezolve AI"
+details = """
+As an AI ML Engineer Team Lead, led a team of AI Engineers in developing and operationalizing LLM-based conversational AI systems for retail applications. Established comprehensive LLMOps practices including evaluation frameworks, observability infrastructure, and safety systems for production AI.
+
+Technical team lead for preview releases, managing 4-5 engineers while contributing hands-on to architectural design and implementation. Core work involves advancing multi-agent conversational systems for retail applications.
+
+* Led the transition from static workflow-based systems to dynamic tool-based and subagent-based architectures with background context update functionalities.
+* Coordinated development across core technical areas including context management and compacting, prompt optimization, agent-to-agent (A2A) communication protocols, and streaming response implementations.
+
+Established LLMOps best practices for evaluation and observability, influencing organization-wide adoption. Core work involves building comprehensive evaluation and monitoring infrastructure for production LLM systems.
+
+* Designed comprehensive evaluation framework tying together offline evals for engineering improvement with online CI/CD evaluation pipelines.
+* Developed proprietary testing library with scenario-based conversation generation for multi-agent systems.
+* Architected distributed tracing infrastructure for LLM applications, establishing standards for performance monitoring and analytics across teams.
+
+Designed and implemented guardrail systems, scoring mechanisms, and intent classification systems to ensure safe, high-quality conversational experiences.
+
+Partnered with external vendors on integration initiatives and facilitated knowledge sharing through pair programming and onboarding support.
+"""
 
 [[experience.list]]
 title = "Data Scientist (Contractor) with Machine Learning Engineering Focus"
