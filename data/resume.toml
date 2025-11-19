@@ -57,19 +57,19 @@ Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsMode
         [[skills.list.items]]
             details = "Languages: Python // SQL // Matlab"
         [[skills.list.items]]
-            details = "Lower Level: C via Cython/JAX"
+            details = "Lower Level: C via Cython // JAX"
         [[skills.list.items]]
-            details = "MLOps: Flask/Fastapi/torchserve/MLFlow/Dask"
+            details = "MLOps: Flask // Fastapi // torchserve // MLFlow // Dask"
         [[skills.list.items]]
-            details = "Data Engineering: Kafka/Airflow/DuckDB/Spark/PostgreSQL"
+            details = "Data Engineering: Kafka // Airflow // DuckDB // Spark // PostgreSQL"
         [[skills.list.items]]
-            details = "AI Agents: LangGraph/DSPy/PydanticAI/SmolAgents/ClaudeCode SDK"
+            details = "AI Agents: LangGraph // DSPy // PydanticAI // SmolAgents // ClaudeCode SDK"
         [[skills.list.items]]
-            details = "LLM Tooling: Weaviate/Unsloth/LoRA/QLoRA/FAISS"
+            details = "LLM Tooling: Weaviate // Unsloth // LoRA // QLoRA // FAISS"
         [[skills.list.items]]
-            details = "Modelling: XGBoost/LightGBM/StatsModel/Pytorch"
+            details = "Modelling: XGBoost // LightGBM // StatsModel // Pytorch"
         [[skills.list.items]]
-            details = "LLMOps: vLLM/llama.cpp/deepeval/evals/Langfuse/OpenTelemetry"
+            details = "LLMOps: vLLM // llama.cpp // deepeval // evals // Langfuse // OpenTelemetry"
         [[skills.list.items]]
             details = "AWS (S3, Redshift, Glue, EC2)"
         [[skills.list.items]]
