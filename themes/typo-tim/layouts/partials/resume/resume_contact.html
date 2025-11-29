@@ -1,0 +1,21 @@
+{{/*
+    Resume Contact Partial
+
+    This partial is currently not used as contact information is displayed
+    in the resume header (resume_header.html).
+
+    If you want a separate contact section, you can add it here.
+    Example structure:
+
+    <section class="contact-section resume-py-3">
+        <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">Contact</h3>
+        <ul class="resume-list-unstyled">
+            {{ range .Site.Data.resume.contact.list }}
+            <li class="resume-mb-2">
+                <i class="{{ .icon }} resume-icon resume-mr-2"></i>
+                <a class="resume-link" href="{{ .url | safeURL }}">{{ .text }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+*/}}

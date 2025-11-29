@@ -1,0 +1,42 @@
+/* ============================================
+   GALLERY STYLES
+   Styling for photo gallery pages
+   Dependencies: vars.css, colors/default.css
+   ============================================ */
+
+/* Gallery back navigation */
+.gallery-back-nav {
+    text-align: left;
+    margin: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.gallery-back-link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 50px;
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.gallery-back-link:hover {
+    opacity: 0.8;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .gallery-back-link {
+        color: #ffffff;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gallery-back-link {
+        font-size: 36px;
+        margin-right: 20px;
+    }
+}
