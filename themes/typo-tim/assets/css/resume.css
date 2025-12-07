@@ -8,13 +8,7 @@
 .resume-container {
     max-width: var(--resume-max-width);
     margin: 0 auto;
-    padding: 0 1rem;
-}
-
-@media (min-width: 1024px) {
-    .resume-container {
-        padding: 0 3rem;
-    }
+    padding: 0;
 }
 
 /* Resume Wrapper - Main Article */
@@ -200,7 +194,14 @@
 
 /* Resume Header */
 .resume-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .resume-header {
+        padding: 0;
+    }
 }
 
 .resume-name {
@@ -211,14 +212,14 @@
 }
 
 .resume-tagline {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: var(--content-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
     .resume-tagline {
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -237,6 +238,23 @@
 
 .resume-contact li:last-child {
     margin-bottom: 0;
+}
+
+/* Resume Contact Heading */
+.resume-contact-heading {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    text-align: left;
+}
+
+.resume-contact-item {
+    display: inline;
+}
+
+.resume-contact-item:not(:last-child)::after {
+    content: " | ";
+    color: var(--content-secondary);
 }
 
 .resume-link {

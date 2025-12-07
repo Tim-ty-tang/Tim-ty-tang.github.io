@@ -8,8 +8,4 @@ type: "resume"
 googleAnalytics: "UA-XXXXXXX-Y"
 resumeData: "resume"
 ---
-# Tsz Yu Timothy Tang
-
-## Machine Learning Engineer/Data Scientist
-
 {{< resume >}}

@@ -36,15 +36,15 @@
 
     /* === COLORS === */
     /* Primary brand color */
-    --primary-color: #54B689;
-    --primary: var(--primary-color);  /* Alias for compatibility */
+    --primary-color: var(--content-primary);
+    --primary: var(--content-primary);  /* Alias for compatibility */
 
     /* Theme background (inherits from colors/default.css) */
     --theme: var(--background);
 
     /* Semantic colors */
     --heading-color: var(--content-primary);
-    --link-color: var(--primary-color);
+    --link-color: var(--content-primary);
 
     /* List indentation */
     --li-indent: 1.5rem;
