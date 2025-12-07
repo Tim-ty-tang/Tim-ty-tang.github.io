@@ -3,11 +3,7 @@ languageCode = 'en-uk'
 title = 'TTYT'
 theme = 'typo-tim'
 
-[build]
-timeout = "300s"  # Increase timeout to 2 minutes
-
-[timeouts]
-render = "300s"  # Increase this value as needed
+timeout = "600s"
 
 [taxonomies]
 tag = 'tags'
