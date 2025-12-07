@@ -1,0 +1,461 @@
+/* ============================================
+   RESUME STYLES
+   Custom CSS for resume layout (replaces Bootstrap)
+   Dependencies: vars.css, colors/default.css
+   ============================================ */
+
+/* Container and Layout */
+.resume-container {
+    max-width: var(--resume-max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+    .resume-container {
+        padding: 0 3rem;
+    }
+}
+
+/* Resume Wrapper - Main Article */
+.resume-wrapper {
+    max-width: var(--resume-max-width);
+    margin: 3rem auto;
+    padding: 3rem;
+    background: var(--resume-bg);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .resume-wrapper {
+        margin: 1.5rem auto;
+        padding: 1.5rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Grid System - Row */
+.resume-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+/* Grid System - Columns */
+.resume-col {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: 100%;
+}
+
+/* Column widths - Mobile first */
+.resume-col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .resume-col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+    .resume-col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    .resume-col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .resume-col-lg-8 {
+        flex: 0 0 66.666%;
+        max-width: 66.666%;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .resume-col-xl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .resume-col-xl-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+/* Flexbox Utilities */
+.resume-align-center {
+    align-items: center;
+}
+
+/* Spacing Utilities */
+.resume-mb-0 { margin-bottom: 0; }
+.resume-mb-2 { margin-bottom: 0.5rem; }
+.resume-mb-3 { margin-bottom: 1rem; }
+.resume-mb-4 { margin-bottom: 1.5rem; }
+.resume-mb-5 { margin-bottom: 3rem; }
+.resume-my-5 { margin-top: 3rem; margin-bottom: 3rem; }
+
+.resume-py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+.resume-px-lg-4 { padding-left: 0; padding-right: 0; }
+.resume-pb-lg-4 { padding-bottom: 0; }
+.resume-pr-0 { padding-right: 0; }
+.resume-pr-lg-5 { padding-right: 0; }
+
+@media (min-width: 992px) {
+    .resume-px-lg-4 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .resume-pb-lg-4 {
+        padding-bottom: 1.5rem;
+    }
+
+    .resume-pr-lg-5 {
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .resume-mb-md-0 {
+        margin-bottom: 0;
+    }
+}
+
+/* Text Utilities */
+.resume-text-uppercase {
+    text-transform: uppercase;
+}
+
+.resume-text-muted {
+    color: var(--content-secondary);
+}
+
+.resume-text-left {
+    text-align: left;
+}
+
+.resume-text-center {
+    text-align: center;
+}
+
+.resume-text-md-right {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .resume-text-md-right {
+        text-align: right;
+    }
+}
+
+/* Typography */
+.resume-font-weight-bold {
+    font-weight: 700;
+}
+
+/* Lists */
+.resume-list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Icon spacing (Font Awesome) */
+.resume-icon {
+    width: 1.25em;
+    margin-right: 0.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.resume-icon-lg {
+    font-size: 1.25em;
+    vertical-align: -0.225em;
+}
+
+.resume-icon-2x {
+    font-size: 2em;
+}
+
+.resume-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.resume-mr-3 {
+    margin-right: 1rem;
+}
+
+/* Resume Header */
+.resume-header {
+    margin-bottom: 2rem;
+}
+
+.resume-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+}
+
+.resume-tagline {
+    font-size: 1.125rem;
+    color: var(--content-secondary);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .resume-tagline {
+        margin-bottom: 0;
+    }
+}
+
+/* Resume Contact */
+.resume-contact {
+    font-size: 0.875rem;
+}
+
+.resume-contact ul {
+    margin-bottom: 0;
+}
+
+.resume-contact li {
+    margin-bottom: 0.5rem;
+}
+
+.resume-contact li:last-child {
+    margin-bottom: 0;
+}
+
+.resume-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
+
+/* Resume Body Layout */
+.resume-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 991px) {
+    .resume-body {
+        flex-direction: column;
+    }
+}
+
+/* Resume Sections */
+.resume-section-heading {
+    font-size: 1.125rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.resume-section-heading::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Resume Main Content */
+.resume-main {
+    flex: 1 1 65%;
+    min-width: 0;
+}
+
+.resume-main .item {
+    margin-bottom: 1.5rem;
+}
+
+.resume-main .item-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+}
+
+.resume-main .item-meta {
+    font-size: 0.875rem;
+    color: var(--content-secondary);
+}
+
+.resume-main .item-content {
+    font-size: 0.9375rem;
+    margin-top: 0.5rem;
+}
+
+.resume-main .item-content p {
+    margin-bottom: 0.75rem;
+}
+
+.resume-main .resume-list {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+}
+
+.resume-main .resume-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Resume Sidebar */
+.resume-aside {
+    flex: 1 1 30%;
+    min-width: 0;
+}
+
+@media (min-width: 992px) {
+    .resume-aside {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        padding-left: 2rem;
+    }
+}
+
+.resume-aside .item {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.resume-aside .item-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--heading-color);
+}
+
+/* Education */
+.resume-education-list,
+.resume-awards-list {
+    font-size: 0.875rem;
+}
+
+.resume-degree {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.resume-degree-org,
+.resume-degree-time {
+    font-size: 0.8125rem;
+    color: var(--content-secondary);
+}
+
+/* Skills */
+.resume-skills-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.resume-skills-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Languages & Interests */
+.resume-lang-list,
+.resume-interests-list {
+    font-size: 0.875rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.resume-lang-list li,
+.resume-interests-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Social Links */
+.resume-social-list {
+    font-size: 0.8125rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Horizontal Rule */
+.resume-wrapper hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+/* Summary Section */
+.resume-summary {
+    margin-bottom: 2rem;
+}
+
+.resume-intro {
+    font-size: 0.9375rem;
+    display: inline;
+}
+
+.summary-text pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .resume-contact {
+        margin-top: 1.5rem;
+    }
+
+    .resume-aside {
+        border-left: 0;
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .resume-main .item-heading {
+        flex-direction: column;
+    }
+
+    .resume-main .item-title,
+    .resume-main .item-meta {
+        text-align: left !important;
+    }
+}
+
+@media print {
+    .resume-wrapper {
+        box-shadow: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .resume-section-heading {
+        page-break-after: avoid;
+    }
+
+    .item {
+        page-break-inside: avoid;
+    }
+}

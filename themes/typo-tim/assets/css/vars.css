@@ -1,17 +1,21 @@
 :root {
+    /* === LAYOUT === */
     --main-width: 1200px;
     --main-padding: 1.4em;
     --main-padding-bottom: 3rem;
-
     --caption-padding: calc(.25 * var(--main-padding));
 
-    /* header settings */
+    /* Resume-specific layout */
+    --resume-max-width: 1000px;
+    --resume-bg: var(--background);
+
+    /* === HEADER SETTINGS === */
     --header-top-gap: 2rem;
     --header-bottom-gap: 2rem;
     --header-menu-side-gap: .5rem;
     --header-menu-top-gap: 1rem;
 
-    /* Typography */
+    /* === TYPOGRAPHY === */
     --h1-margin-top: 2rem;
     --h1-margin-bottom: 1.5rem;
     --h2-margin-top: 2rem;
@@ -29,6 +33,18 @@
     --p-font-size: 1em;
     --p-line-height: 1.5em;
     --caption-font-size: .8em;
+
+    /* === COLORS === */
+    /* Primary brand color */
+    --primary-color: #54B689;
+    --primary: var(--primary-color);  /* Alias for compatibility */
+
+    /* Theme background (inherits from colors/default.css) */
+    --theme: var(--background);
+
+    /* Semantic colors */
+    --heading-color: var(--content-primary);
+    --link-color: var(--primary-color);
 
     /* List indentation */
     --li-indent: 1.5rem;

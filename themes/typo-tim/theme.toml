@@ -1,11 +1,11 @@
-name = 'Typo'
+name = 'typo-tim'
 license = 'MIT'
 licenselink = 'https://github.com/tomfran/typo/blob/main/LICENSE'
-description = 'A simple Hugo theme'
+description = 'Personal fork of Typo theme with resume, gallery, and enhanced features'
 
-homepage = 'https://github.com/tomfran/typo'
+homepage = 'https://ttyt.me'
 
-demosite = 'https://tomfran.github.io/'
+demosite = 'https://ttyt.me'
 
 tags = [
     "responsive",
@@ -17,11 +17,16 @@ tags = [
     "minimal",
     "personal",
     "portfolio",
+    "resume",
+    "cv",
+    "gallery",
 ]
 
 features = [
     "responsive",
     "blog",
+    "resume-cv",
+    "photo-gallery",
     "table-of-contents",
     "highlight.js",
     "favicon",
@@ -29,8 +34,15 @@ features = [
     "minified-assets",
     "dark-light-images",
     "color-palettes",
+    "font-awesome-icons",
 ]
 
 [author]
+name = 'Timothy Tang (based on Typo by Francesco Tomaselli)'
+homepage = 'https://ttyt.me'
+
+[original]
 name = 'Francesco Tomaselli'
 homepage = 'https://tomfran.github.io/'
+theme = 'Typo'
+repo = 'https://github.com/tomfran/typo'

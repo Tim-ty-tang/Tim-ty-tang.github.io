@@ -1,9 +1,11 @@
 {{ $js := resources.Get "js/gallerydeluxe/cdn/index.js" }}
 {{ $js = $js | js.Build (dict "params" site.Params.gallerydeluxe "minify" hugo.IsProduction) }}
 {{ $styles := resources.Get "css/gallerydeluxe/styles.css" }}
+{{ $galleryStyles := resources.Get "css/gallery.css" }}
 {{ $css := resources.Get "css/styles.css" }}
 <script src="{{ $js.RelPermalink }}" defer></script>
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}"></link>
+<link rel="stylesheet" href="{{ $galleryStyles.RelPermalink }}"></link>
 
 {{ with site.Params.plausible_domain }}
 <script defer data-domain="{{ . }}" src="https://plausible.io/js/plausible.js"></script>

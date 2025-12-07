@@ -1,17 +1,17 @@
-<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+<aside class="resume-aside resume-col resume-col-12 resume-col-lg-4 resume-col-xl-3 resume-px-lg-4 resume-pb-lg-4">
 
 
     {{ if .Site.Data.resume.education.enable }}
-        <section class="education-section py-3">
+        <section class="education-section resume-py-3">
 
-            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "education" }}</h3>
+            <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">{{ i18n "education" }}</h3>
 
-            <ul class="list-unstyled resume-education-list">
+            <ul class="resume-list-unstyled resume-education-list">
                 {{ range .Site.Data.resume.education.list }}
-                <li class="mb-3">
-                    <div class="resume-degree font-weight-bold">{{ .degree }}</div>
-                    <div class="resume-degree-org text-muted">{{ .university }}</div>
-                    <div class="resume-degree-time text-muted">{{ .dates }}</div>
+                <li class="resume-mb-3">
+                    <div class="resume-degree resume-font-weight-bold">{{ .degree }}</div>
+                    <div class="resume-degree-org resume-text-muted">{{ .university }}</div>
+                    <div class="resume-degree-time resume-text-muted">{{ .dates }}</div>
                 </li>
                 {{ end }}
             </ul>
@@ -21,16 +21,16 @@
     {{ end }}
 
     {{ if .Site.Data.resume.awards.enable }}
-        <section class="education-section py-3">
+        <section class="education-section resume-py-3">
 
-            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "awards" }}</h3>
+            <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">{{ i18n "awards" }}</h3>
 
-            <ul class="list-unstyled resume-awards-list">
+            <ul class="resume-list-unstyled resume-awards-list">
                 {{ range .Site.Data.resume.awards.list }}
-                <li class="mb-3">
-                    <div class="font-weight-bold">{{ .name }}</div>
-                    <div class="text-muted">{{ .body }}</div>
-                    <div class="text-muted">{{ .date }}</div>
+                <li class="resume-mb-3">
+                    <div class="resume-font-weight-bold">{{ .name }}</div>
+                    <div class="resume-text-muted">{{ .body }}</div>
+                    <div class="resume-text-muted">{{ .date }}</div>
                 </li>
                 {{ end }}
             </ul>
@@ -40,17 +40,17 @@
     {{ end }}
 
     {{ if .Site.Data.resume.skills.enable }}
-    
-        <section class="skills-section py-3">
 
-            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "skills" }}</h3>
+        <section class="skills-section resume-py-3">
+
+            <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">{{ i18n "skills" }}</h3>
 
             {{ range .Site.Data.resume.skills.list }}
             <div class="item">
                 <h4 class="item-title">{{ .title }}</h4>
-                <ul class="list-unstyled resume-skills-list">
+                <ul class="resume-list-unstyled resume-skills-list">
                     {{ range .items }}
-                    <li class="mb-2">{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                    <li class="resume-mb-2">{{ with .details }}{{ . | markdownify }}{{ end }}</li>
                     {{ end }}
                 </ul>
             </div><!--//item-->
@@ -62,28 +62,28 @@
 
     {{ if .Site.Data.resume.languages.enable }}
 
-        <section class="skills-section py-3">
+        <section class="skills-section resume-py-3">
 
-            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "languages" }}</h3>
+            <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">{{ i18n "languages" }}</h3>
 
-            <ul class="list-unstyled resume-lang-list">
+            <ul class="resume-list-unstyled resume-lang-list">
                 {{ range .Site.Data.resume.languages.list }}
-                <li class="mb-2">{{ .name }} <span class="text-muted">({{ .level }})</span></li>
+                <li class="resume-mb-2">{{ .name }} <span class="resume-text-muted">({{ .level }})</span></li>
                 {{ end }}
             </ul>
 
-        </section><!--//certificates-section-->    
+        </section><!--//certificates-section-->
     {{ end }}
 
     {{ if .Site.Data.resume.interests.enable }}
 
-        <section class="skills-section py-3">
+        <section class="skills-section resume-py-3">
 
-            <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "interests" }}</h3>
+            <h3 class="resume-text-uppercase resume-section-heading resume-mb-4">{{ i18n "interests" }}</h3>
 
-            <ul class="list-unstyled resume-interests-list mb-0">
+            <ul class="resume-list-unstyled resume-interests-list resume-mb-0">
                 {{ range .Site.Data.resume.interests.list }}
-                <li class="mb-2">{{ .name }}</li>
+                <li class="resume-mb-2">{{ .name }}</li>
                 {{ end }}
             </ul>
 
