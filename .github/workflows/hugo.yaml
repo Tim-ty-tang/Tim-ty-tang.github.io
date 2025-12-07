@@ -31,7 +31,7 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # Increase this timeout value as needed
+    timeout-minutes: 15
     env:
       HUGO_VERSION: 0.144.1
     steps:
@@ -51,12 +51,12 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Build with Hugo (2 min timeout)
+      - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
-        timeout-minutes: 2
+        timeout-minutes: 10
         run: |
           hugo \
             --gc \
