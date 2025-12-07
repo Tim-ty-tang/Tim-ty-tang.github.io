@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: optimize-gallery-images
+        name: Optimize gallery images
+        entry: bash -c 'for img in "$@"; do w=$(identify -format "%w" "$img"); h=$(identify -format "%h" "$img"); if [ "$w" -gt 2048 ] || [ "$h" -gt 2048 ]; then mogrify -resize 2048x2048\> -quality 85 "$img"; fi; done' --
+        language: system
+        files: ^content/gallery/.*\.(jpg|JPG|jpeg|JPEG)$
+        types: [file]
