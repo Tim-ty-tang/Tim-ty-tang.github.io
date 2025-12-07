@@ -25,27 +25,13 @@
 [summary]
     enable = true
     text = """
-Machine Learning Engineer and Data Scientist. With a focus on the scientific computing python stack and associated low level language access (C via Cython, CUDA via Pytorch). 
+Machine Learning Engineer & Data Scientist specializing in the scientific Python stack with low-level language integration (C via Cython, CUDA via PyTorch). Experienced building production ML systems across gradient boosting (XGBoost, LightGBM), survival analysis, deep learning, and explainable ML—spanning telematics risk scoring, equipment failure prediction, and counterfactual modeling for engineering applications.
 
-Extensive hands-on experience with production LLM systems and LLMOps. Expert in cutting-edge LLM frameworks, particularly LangGraph for building stateful multi-agent systems and complex conversational workflows. Proficient in DSPy for programmatic prompt optimization. 
+Agentic Systems & MLOps: Deep production experience building stateful multi-agent systems with LangGraph, programmatic prompt optimization via DSPy, and end-to-end LLMOps pipelines. Expert in fine-tuning, deploying, and evaluating both open-source (Ollama) and proprietary LLMs, with specialized focus on observability infrastructure using OpenTelemetry, evaluation frameworks (DeepEval, Inspect AI), and production guardrails/safety systems.
 
-Deep expertise in customizing, fine-tuning, deploying, and systematically evaluating both open-source and proprietary LLMs for production use cases. Experienced in model adaptation techniques including fine-tuning, prompt optimization, and domain-specific model customization.
+Data & Distributed Computing: Proficient in PySpark, Dask, and data engineering tooling (Kafka, Airflow, DuckDB) for batch processing and distributed training. Cloud platform experience across AWS (S3, Redshift, Glue), Azure (ML, Blob Storage, Actions), Databricks, and Palantir Foundry.
 
-Specialized in LLM observability and evaluation infrastructure. Proficient in distributed tracing frameworks (OpenTelemetry) for LLM applications, building comprehensive evaluation pipelines, and establishing monitoring systems for production AI. 
-
-Experienced in designing and implementing guardrails, safety systems, and quality scoring mechanisms for conversational AI.
-
-Also experienced in distributed computing for data science processes. (pyspark, dask). 
-
-Used Cloud tools for machine learning (Azure ML, Databricks, Palantir Foundry)
-
-Experienced in web frameworks (Flask, Fastapi, torchserve) for model and algorithm deployment and serving. 
-
-Experienced in Spark via PySpark, and various data engineering tools (Kafka, Airflow, DuckDB) for batch processes and distributed training. AWS and Azure experience (S3, Redshift, Glue, Azure Actions, Blob Storage). 
-
-Experienced in managing tooling for the Python Data Science Stack (uv, Poetry, Conda)
-
-Well versed in up to date Python modeling packages (XGBoost, LightGBM, StatsModel) and deep learning (Pytorch). Experienced in open source LLMs deployment (Ollama) and LLM evaluations (Deepeval, InspectAI).
+Deployment & Tooling: Experienced serving models via FastAPI, Flask, and TorchServe. Strong command of modern Python tooling (uv, Poetry, Conda) and the ML ecosystem (PyTorch, XGBoost, LightGBM, StatsModels).
     """
 
 
